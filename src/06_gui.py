@@ -147,8 +147,8 @@ def draw_single(ax, entry: dict):
     ax.ticklabel_format(style="sci", axis="both", scilimits=(0, 0))
     for spine in ax.spines.values():
         spine.set_edgecolor(BORDER)
-    ax.legend(fontsize=8, facecolor=BG_CARD, edgecolor=BORDER,
-              labelcolor=FG_TEXT, loc="best")
+    # ax.legend(fontsize=8, facecolor=BG_CARD, edgecolor=BORDER,
+    #           labelcolor=FG_TEXT, loc="best")
     ax.set_aspect("equal")
 
 
@@ -182,8 +182,8 @@ def draw_compare(ax, entry1: dict, entry2: dict):
     ax.ticklabel_format(style="sci", axis="both", scilimits=(0, 0))
     for spine in ax.spines.values():
         spine.set_edgecolor(BORDER)
-    ax.legend(fontsize=9, facecolor=BG_CARD, edgecolor=BORDER,
-              labelcolor=FG_TEXT, loc="best")
+    # ax.legend(fontsize=9, facecolor=BG_CARD, edgecolor=BORDER,
+    #           labelcolor=FG_TEXT, loc="best")
     ax.set_aspect("equal")
 
 
@@ -257,8 +257,8 @@ def draw_epr(ax, shorelines: list[dict], gdf_epr: gpd.GeoDataFrame):
     handles += [mpatches.Patch(facecolor=cm.RdYlGn(norm(v)),
                                label=f"{sl['date'].strftime('%Y-%m-%d')}")
                 for sl, v in zip(shorelines, np.linspace(-vmax * 0.5, vmax * 0.5, len(shorelines)))]
-    ax.legend(handles=handles, fontsize=7, facecolor=BG_CARD,
-              edgecolor=BORDER, labelcolor=FG_TEXT, loc="lower right")
+    # ax.legend(handles=handles, fontsize=7, facecolor=BG_CARD,
+    #           edgecolor=BORDER, labelcolor=FG_TEXT, loc="lower right")
 
 
 # ─────────────────────────────────────────
