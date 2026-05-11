@@ -4,6 +4,7 @@ ETAP 1 — Pobieranie danych Sentinel-1 GRD
 API: OData / REST
 Obszar: Mierzeja Wiślana
 """
+print("test")
 
 import os
 import json
