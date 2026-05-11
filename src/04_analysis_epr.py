@@ -213,7 +213,7 @@ def plot_epr(gdf: gpd.GeoDataFrame, shorelines: list[dict]) -> None:
     fig, axes = plt.subplots(1, 2, figsize=(16, 6))
     date_range = (f"{shorelines[0]['date'].strftime('%Y-%m-%d')} → "
                   f"{shorelines[-1]['date'].strftime('%Y-%m-%d')}")
-    fig.suptitle(f"Analiza EPR — Mierzeja Wiślana\n{date_range}", fontsize=13)
+    fig.suptitle(f"Analiza EPR — Costa Brava\n{date_range}", fontsize=13)
 
     x   = gdf["dist_km"]
     epr = gdf["epr_m_yr"]

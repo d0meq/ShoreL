@@ -45,10 +45,10 @@ MANUAL_THRESHOLD = -17.0
 # Minimalna powierzchnia obszaru lądowego [piksele]
 MIN_LAND_AREA = 10_000
 
-# Obszar zainteresowania — Mierzeja Wiślana (WGS84)
+# Obszar zainteresowania — Costa Brava: Platja d'Aro / Palamós (WGS84)
 AOI_WGS84 = {
-    "lon_min": -3.1, "lon_max": -2.8,
-    "lat_min": 36.6, "lat_max": 36.8,
+    "lon_min": 3.05, "lon_max": 3.22,
+    "lat_min": 41.78, "lat_max": 41.90,
 }
 
 
@@ -219,7 +219,7 @@ def save_preview(data_db_full: np.ndarray,
 
     fig, axes = plt.subplots(1, 3, figsize=(21, 7))
     fig.suptitle(
-        f"Mierzeja Wiślana — {date_str[:4]}-{date_str[4:6]}-{date_str[6:]}  (ID: {scene_id})",
+        f"Costa Brava — {date_str[:4]}-{date_str[4:6]}-{date_str[6:]}  (ID: {scene_id})",
         fontsize=13, fontweight="bold"
     )
 

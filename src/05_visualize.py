@@ -116,7 +116,7 @@ def map_epr(shorelines: list[dict]) -> None:
     ax.legend(handles=handles, fontsize=8, loc="upper right",
               title="Linia brzegowa", title_fontsize=9)
 
-    ax.set_title("Mapa zmian linii brzegowej — Mierzeja Wiślana\n"
+    ax.set_title("Mapa zmian linii brzegowej — Costa Brava\n"
                  "(zielony = akumulacja, czerwony = erozja)", fontsize=12)
     ax.set_xlabel("Easting [m]")
     ax.set_ylabel("Northing [m]")
@@ -179,7 +179,7 @@ def animate_shorelines(shorelines: list[dict]) -> None:
         ax.set_xlim(x_min - pad_x, x_max + pad_x)
         ax.set_ylim(y_min - pad_y, y_max + pad_y)
         ax.set_aspect("equal")
-        ax.set_title(f"Linia brzegowa — Mierzeja Wiślana\n"
+        ax.set_title(f"Linia brzegowa — Costa Brava\n"
                      f"{sl['date'].strftime('%d %B %Y')}",
                      fontsize=12)
         ax.set_xlabel("Easting [m]")

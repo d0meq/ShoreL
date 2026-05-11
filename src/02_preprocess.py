@@ -6,7 +6,7 @@ Kroki:
   3. Kalibracja radiometryczna → współczynnik sigma0
   4. Konwersja do skali decybelowej [dB]
   5. Filtr speckle (Lee 7x7) — redukcja szumu radarowego
-  6. Reprojekcja do EPSG:32634 (UTM strefa 34N — Polska)
+  6. Reprojekcja do EPSG:32631 (UTM strefa 31N — Katalonia/Costa Brava)
   7. Zapis jako GeoTIFF
 """
 
@@ -30,7 +30,7 @@ RAW_DIR       = Path("data/raw")
 PROCESSED_DIR = Path("data/processed")
 PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
 
-TARGET_CRS = "EPSG:32630"   # zamiast 32634
+TARGET_CRS = "EPSG:32631"   # UTM strefa 31N — Costa Brava / Katalonia
 FILTER_SIZE = 7             # rozmiar okna filtra Lee
 
 
@@ -161,7 +161,7 @@ def lee_filter(img: np.ndarray, size: int = 7) -> np.ndarray:
 # ─────────────────────────────────────────
 def reproject_to_utm(src_path: Path, dst_path: Path) -> None:
     with rasterio.open(src_path) as src:
-        dst_crs = CRS.from_epsg(32634)
+        dst_crs = CRS.from_string(TARGET_CRS)
         transform, width, height = calculate_default_transform(
             src.crs, dst_crs, src.width, src.height, *src.bounds
         )
@@ -244,7 +244,7 @@ def process_scene(safe_dir: Path) -> Path | None:
         dst.write(sigma0_db, 1)
 
     # Krok 6 — reprojekcja
-    print(f"  → Reprojekcja do {TARGET_CRS} ...", end="", flush=True)
+    print(f"  → Reprojekcja do {TARGET_CRS} (UTM 31N) ...", end="", flush=True)
     reproject_to_utm(tmp_path, final_path)
     tmp_path.unlink()
     print(" ✓")

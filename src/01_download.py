@@ -2,9 +2,8 @@
 ETAP 1 — Pobieranie danych Sentinel-1 GRD
 Źródło: Copernicus Data Space Ecosystem (CDSE)
 API: OData / REST
-Obszar: Mierzeja Wiślana
+Obszar: Costa Brava (okolice Platja d'Aro / Palamós, Katalonia)
 """
-print("test")
 
 import os
 import json
@@ -18,13 +17,14 @@ from datetime import datetime
 USERNAME = "dominikskornicki68@gmail.com"   # email z konta Copernicus
 PASSWORD = "Ner1fymn0xh3lR>"              # hasło Copernicus
 
-# Obszar zainteresowania (AOI) — Mierzeja Wiślana (bounding box)
+# Obszar zainteresowania (AOI) — Costa Brava: Platja d'Aro / Palamós (bounding box)
 # Format: min_lon, min_lat, max_lon, max_lat
-AOI_WKT = "POLYGON((19.0 54.3, 19.5 54.3, 19.5 54.45, 19.0 54.45, 19.0 54.3))"
+# Linia brzegowa dobrze widoczna w SAR — mały obszar, mniej danych do pobrania
+AOI_WKT = "POLYGON((3.05 41.78, 3.22 41.78, 3.22 41.90, 3.05 41.90, 3.05 41.78))"
 
-# Zakres dat (format: YYYY-MM-DD)
-DATE_START = "2018-09-01"
-DATE_END   = "2018-09-30"
+# Zakres dat (format: YYYY-MM-DD) — lato = minimalne zachmurzenie nad Katalonią
+DATE_START = "2022-07-01"
+DATE_END   = "2022-07-31"
 
 # Katalog zapisu danych
 OUTPUT_DIR = Path("data/raw")
@@ -151,7 +151,7 @@ def main():
     print("=" * 55)
     print("  Monitoring erozji linii brzegowej — Pobieranie danych")
     print("=" * 55)
-    print(f"  Obszar : Mierzeja Wiślana")
+    print(f"  Obszar : Costa Brava (Platja d'Aro / Palamós)")
     print(f"  Okres  : {DATE_START}  →  {DATE_END}")
     print(f"  Katalog: {OUTPUT_DIR.resolve()}")
     print("=" * 55)
