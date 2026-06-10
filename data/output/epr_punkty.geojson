@@ -1,0 +1,32 @@
+{
+"type": "FeatureCollection",
+"name": "epr_punkty",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32634" } },
+"features": [
+{ "type": "Feature", "properties": { "transect_id": 0, "first_year": 2018, "last_year": 2025, "NSM_m": -183.89, "EPR_m_yr": -26.27 }, "geometry": { "type": "Point", "coordinates": [ 502547.910657364758663, 5999561.094266360625625 ] } },
+{ "type": "Feature", "properties": { "transect_id": 1, "first_year": 2018, "last_year": 2025, "NSM_m": -190.97, "EPR_m_yr": -27.281 }, "geometry": { "type": "Point", "coordinates": [ 502409.666128171316814, 5999416.565894930623472 ] } },
+{ "type": "Feature", "properties": { "transect_id": 2, "first_year": 2018, "last_year": 2025, "NSM_m": -192.54, "EPR_m_yr": -27.506 }, "geometry": { "type": "Point", "coordinates": [ 502282.512198118958622, 5999264.485904361121356 ] } },
+{ "type": "Feature", "properties": { "transect_id": 3, "first_year": 2018, "last_year": 2025, "NSM_m": -211.0, "EPR_m_yr": -30.143 }, "geometry": { "type": "Point", "coordinates": [ 502198.700562626530882, 5999082.89402746129781 ] } },
+{ "type": "Feature", "properties": { "transect_id": 4, "first_year": 2018, "last_year": 2025, "NSM_m": -264.33, "EPR_m_yr": -37.761 }, "geometry": { "type": "Point", "coordinates": [ 502114.888927134161349, 5998901.302150561474264 ] } },
+{ "type": "Feature", "properties": { "transect_id": 5, "first_year": 2018, "last_year": 2025, "NSM_m": -220.0, "EPR_m_yr": -31.429 }, "geometry": { "type": "Point", "coordinates": [ 502110.0, 5998702.37593908701092 ] } },
+{ "type": "Feature", "properties": { "transect_id": 6, "first_year": 2018, "last_year": 2025, "NSM_m": -200.0, "EPR_m_yr": -28.571 }, "geometry": { "type": "Point", "coordinates": [ 502110.0, 5998502.37593908701092 ] } },
+{ "type": "Feature", "properties": { "transect_id": 7, "first_year": 2018, "last_year": 2025, "NSM_m": -302.0, "EPR_m_yr": -43.143 }, "geometry": { "type": "Point", "coordinates": [ 502137.433073548949324, 5998309.875433786772192 ] } },
+{ "type": "Feature", "properties": { "transect_id": 8, "first_year": 2018, "last_year": 2025, "NSM_m": -175.23, "EPR_m_yr": -25.032 }, "geometry": { "type": "Point", "coordinates": [ 502239.178935974254273, 5998137.690128143876791 ] } },
+{ "type": "Feature", "properties": { "transect_id": 9, "first_year": 2018, "last_year": 2025, "NSM_m": -138.72, "EPR_m_yr": -19.817 }, "geometry": { "type": "Point", "coordinates": [ 502340.924798399559222, 5997965.50482250098139 ] } },
+{ "type": "Feature", "properties": { "transect_id": 10, "first_year": 2018, "last_year": 2025, "NSM_m": -134.36, "EPR_m_yr": -19.194 }, "geometry": { "type": "Point", "coordinates": [ 502458.505063442862593, 5997805.437660183757544 ] } },
+{ "type": "Feature", "properties": { "transect_id": 11, "first_year": 2018, "last_year": 2025, "NSM_m": -56.57, "EPR_m_yr": -8.082 }, "geometry": { "type": "Point", "coordinates": [ 502445.35484036616981, 5997662.305873870849609 ] } },
+{ "type": "Feature", "properties": { "transect_id": 12, "first_year": 2018, "last_year": 2025, "NSM_m": -52.17, "EPR_m_yr": -7.454 }, "geometry": { "type": "Point", "coordinates": [ 502314.516832559660543, 5997512.888047118671238 ] } },
+{ "type": "Feature", "properties": { "transect_id": 13, "first_year": 2018, "last_year": 2025, "NSM_m": -49.6, "EPR_m_yr": -7.085 }, "geometry": { "type": "Point", "coordinates": [ 502225.074113459617365, 5997334.002608919516206 ] } },
+{ "type": "Feature", "properties": { "transect_id": 14, "first_year": 2018, "last_year": 2025, "NSM_m": -55.9, "EPR_m_yr": -7.986 }, "geometry": { "type": "Point", "coordinates": [ 502135.631394359632395, 5997155.117170719429851 ] } },
+{ "type": "Feature", "properties": { "transect_id": 15, "first_year": 2018, "last_year": 2025, "NSM_m": -53.83, "EPR_m_yr": -7.69 }, "geometry": { "type": "Point", "coordinates": [ 502110.0, 5996961.167922145687044 ] } },
+{ "type": "Feature", "properties": { "transect_id": 16, "first_year": 2018, "last_year": 2025, "NSM_m": -36.17, "EPR_m_yr": -5.167 }, "geometry": { "type": "Point", "coordinates": [ 502110.0, 5996761.167922145687044 ] } },
+{ "type": "Feature", "properties": { "transect_id": 17, "first_year": 2018, "last_year": 2025, "NSM_m": -20.0, "EPR_m_yr": -2.857 }, "geometry": { "type": "Point", "coordinates": [ 502110.0, 5996561.167922145687044 ] } },
+{ "type": "Feature", "properties": { "transect_id": 18, "first_year": 2018, "last_year": 2025, "NSM_m": -46.83, "EPR_m_yr": -6.69 }, "geometry": { "type": "Point", "coordinates": [ 502208.529569899546914, 5996388.797190270386636 ] } },
+{ "type": "Feature", "properties": { "transect_id": 19, "first_year": 2018, "last_year": 2025, "NSM_m": -14.55, "EPR_m_yr": -2.079 }, "geometry": { "type": "Point", "coordinates": [ 502312.518959278648254, 5996217.95747914724052 ] } },
+{ "type": "Feature", "properties": { "transect_id": 20, "first_year": 2018, "last_year": 2025, "NSM_m": -7.63, "EPR_m_yr": -1.09 }, "geometry": { "type": "Point", "coordinates": [ 502417.424238753097598, 5996047.828249610029161 ] } },
+{ "type": "Feature", "properties": { "transect_id": 21, "first_year": 2018, "last_year": 2025, "NSM_m": 91.92, "EPR_m_yr": 13.132 }, "geometry": { "type": "Point", "coordinates": [ 502488.689976544177625, 5995905.060826442204416 ] } },
+{ "type": "Feature", "properties": { "transect_id": 22, "first_year": 2018, "last_year": 2025, "NSM_m": 144.31, "EPR_m_yr": 20.616 }, "geometry": { "type": "Point", "coordinates": [ 502347.268620306858793, 5995763.639470205642283 ] } },
+{ "type": "Feature", "properties": { "transect_id": 23, "first_year": 2018, "last_year": 2025, "NSM_m": 91.55, "EPR_m_yr": 13.078 }, "geometry": { "type": "Point", "coordinates": [ 502252.793808560993057, 5995593.203553818166256 ] } },
+{ "type": "Feature", "properties": { "transect_id": 24, "first_year": 2018, "last_year": 2025, "NSM_m": 115.95, "EPR_m_yr": 16.564 }, "geometry": { "type": "Point", "coordinates": [ 502189.548255357658491, 5995403.466894207522273 ] } }
+]
+}
